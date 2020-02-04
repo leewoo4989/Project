@@ -9,7 +9,9 @@
     mov r4,#2  @load r4 with 2
 
     add r1,r1,r2  @add r2 to r1 and store it in r1
-    mul r3,r3,r4  @add r4 to r3 and store it in r3
-    sub r1,r1,r3  @add r3 to r1 and store it in r1
-    svc #0        
+    mul r3,r3,r4  @multiply r4 to r3 and store it in r3
+    sub r1,r1,r3  @subtract r3 to r1 and store it in r1
+
+    mov r7,#1
+    svc #0
   .end
